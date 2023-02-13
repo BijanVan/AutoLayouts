@@ -21,7 +21,6 @@ class InfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         prepareSubviews()
     }
 
@@ -31,10 +30,10 @@ class InfoViewController: UIViewController {
         view.addSubview(infoTexView)
 
         NSLayoutConstraint.activate([
-            infoTexView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             infoTexView.topAnchor.constraint(equalTo: view.topAnchor),
-            infoTexView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            infoTexView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             infoTexView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            infoTexView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
     }
 }

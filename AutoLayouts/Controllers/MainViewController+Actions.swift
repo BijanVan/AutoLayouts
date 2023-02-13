@@ -24,6 +24,7 @@ extension MainViewController {
         let text = recipes[currentIndex].description
         let infoViewController = InfoViewController(text: text)
         let navigationController = UINavigationController(rootViewController: infoViewController)
+        navigationController.title = "Information"
         infoViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissModal))
         present(navigationController, animated: true)
     }

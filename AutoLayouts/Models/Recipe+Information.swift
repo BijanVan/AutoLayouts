@@ -20,10 +20,18 @@ The label is center aligned.
 Because the image view has lower content-hugging and compression-resistance priorities, it shrinks and stretches to fill the available space. It also uses an Aspect Fit mode to fill the available space without altering the image's aspect ratio.
 """,
                viewController: SimpleStackViewController()),
+
         Recipe(title: "Nested Stack Views",
                description: """
 This recipe displays a complex layout using a hierarchy of nested stack views. The layout's appearance is controlled by adjusting the stack view's attributes and by setting the content-hugging and compression-resistance priority of the contents. Additional constraints are then added to fine-tune the layout's appearance. For example, the text fields are all given equal width constraints, and the image view is given a square aspect ratio.
 """,
                viewController: NestedStackViewController()),
+
+        Recipe(title: "Dynamic Stack View",
+               description: """
+This recipe demonstrates how to dynamically add and remove items from a stack view while animating the change. The DynamicStackViewController class also programmatically creates and populates stack views at runtime.
+""",
+               viewController: DynamicStackViewController()),
+
     ]}
 }

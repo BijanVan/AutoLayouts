@@ -24,6 +24,12 @@
 		A3BF81B92993FE4F009CCC9A /* MainViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81B82993FE4F009CCC9A /* MainViewController+Actions.swift */; };
 		A3BF81BD2994583D009CCC9A /* Recipe+Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81BC2994583D009CCC9A /* Recipe+Information.swift */; };
 		A3BF81BF29954180009CCC9A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81BE29954180009CCC9A /* InfoViewController.swift */; };
+		A3BF81C12996C30B009CCC9A /* UILayoutPriority+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C02996C30B009CCC9A /* UILayoutPriority+Constants.swift */; };
+		A3BF81C429970818009CCC9A /* NestedStackUpperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C329970818009CCC9A /* NestedStackUpperView.swift */; };
+		A3BF81C6299709AF009CCC9A /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C5299709AF009CCC9A /* NameView.swift */; };
+		A3BF81C82997FA58009CCC9A /* NestedStackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C72997FA58009CCC9A /* NestedStackButtonView.swift */; };
+		A3BF81CA2999523B009CCC9A /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C92999523B009CCC9A /* DynamicStackViewController.swift */; };
+		A3BF81CF29996DF9009CCC9A /* DynamicStackViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81CE29996DF9009CCC9A /* DynamicStackViewController+Actions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,13 @@
 		A3BF81B82993FE4F009CCC9A /* MainViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Actions.swift"; sourceTree = "<group>"; };
 		A3BF81BC2994583D009CCC9A /* Recipe+Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Information.swift"; sourceTree = "<group>"; };
 		A3BF81BE29954180009CCC9A /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A3BF81C02996C30B009CCC9A /* UILayoutPriority+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+Constants.swift"; sourceTree = "<group>"; };
+		A3BF81C329970818009CCC9A /* NestedStackUpperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedStackUpperView.swift; sourceTree = "<group>"; };
+		A3BF81C5299709AF009CCC9A /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		A3BF81C72997FA58009CCC9A /* NestedStackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedStackButtonView.swift; sourceTree = "<group>"; };
+		A3BF81C92999523B009CCC9A /* DynamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
+		A3BF81CB299953AA009CCC9A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A3BF81CE29996DF9009CCC9A /* DynamicStackViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicStackViewController+Actions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +108,7 @@
 		A3BF816E2992C3B4009CCC9A = {
 			isa = PBXGroup;
 			children = (
+				A3BF81CB299953AA009CCC9A /* README.md */,
 				A3BF81792992C3B4009CCC9A /* AutoLayouts */,
 				A3BF81902992C3B5009CCC9A /* AutoLayoutsTests */,
 				A3BF819A2992C3B5009CCC9A /* AutoLayoutsUITests */,
@@ -116,11 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				A3BF81AA2992C554009CCC9A /* Models */,
-				A3BF817A2992C3B4009CCC9A /* AppDelegate.swift */,
 				A3BF81AF29930180009CCC9A /* Controllers */,
+				A3BF817A2992C3B4009CCC9A /* AppDelegate.swift */,
 				A3BF817C2992C3B4009CCC9A /* SceneDelegate.swift */,
-				A3BF817E2992C3B4009CCC9A /* MainViewController.swift */,
-				A3BF81B82993FE4F009CCC9A /* MainViewController+Actions.swift */,
 				A3BF81832992C3B5009CCC9A /* Assets.xcassets */,
 				A3BF81852992C3B5009CCC9A /* LaunchScreen.storyboard */,
 				A3BF81882992C3B5009CCC9A /* Info.plist */,
@@ -153,6 +165,7 @@
 				A3BF81B629933ABC009CCC9A /* ConstraintConsts.swift */,
 				A3BF81B4299306E7009CCC9A /* Recipe.swift */,
 				A3BF81BC2994583D009CCC9A /* Recipe+Information.swift */,
+				A3BF81C02996C30B009CCC9A /* UILayoutPriority+Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,11 +173,42 @@
 		A3BF81AF29930180009CCC9A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3BF817E2992C3B4009CCC9A /* MainViewController.swift */,
+				A3BF81B82993FE4F009CCC9A /* MainViewController+Actions.swift */,
 				A3BF81BE29954180009CCC9A /* InfoViewController.swift */,
-				A3BF81B0299302AD009CCC9A /* SimpleStackViewController.swift */,
-				A3BF81B229930384009CCC9A /* NestedStackViewController.swift */,
+				A3BF81CD29996DC4009CCC9A /* SimpleStack */,
+				A3BF81C2299707E2009CCC9A /* NestedStack */,
+				A3BF81CC29996D9D009CCC9A /* DynamicStack */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3BF81C2299707E2009CCC9A /* NestedStack */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF81B229930384009CCC9A /* NestedStackViewController.swift */,
+				A3BF81C329970818009CCC9A /* NestedStackUpperView.swift */,
+				A3BF81C5299709AF009CCC9A /* NameView.swift */,
+				A3BF81C72997FA58009CCC9A /* NestedStackButtonView.swift */,
+			);
+			path = NestedStack;
+			sourceTree = "<group>";
+		};
+		A3BF81CC29996D9D009CCC9A /* DynamicStack */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF81C92999523B009CCC9A /* DynamicStackViewController.swift */,
+				A3BF81CE29996DF9009CCC9A /* DynamicStackViewController+Actions.swift */,
+			);
+			path = DynamicStack;
+			sourceTree = "<group>";
+		};
+		A3BF81CD29996DC4009CCC9A /* SimpleStack */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF81B0299302AD009CCC9A /* SimpleStackViewController.swift */,
+			);
+			path = SimpleStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,16 +343,22 @@
 			files = (
 				A3BF81B92993FE4F009CCC9A /* MainViewController+Actions.swift in Sources */,
 				A3BF817F2992C3B4009CCC9A /* MainViewController.swift in Sources */,
+				A3BF81CA2999523B009CCC9A /* DynamicStackViewController.swift in Sources */,
+				A3BF81C6299709AF009CCC9A /* NameView.swift in Sources */,
 				A3BF81B1299302AD009CCC9A /* SimpleStackViewController.swift in Sources */,
 				A3BF81AD2992C574009CCC9A /* UIView+Preview.swift in Sources */,
 				A3BF81B329930384009CCC9A /* NestedStackViewController.swift in Sources */,
+				A3BF81C82997FA58009CCC9A /* NestedStackButtonView.swift in Sources */,
 				A3BF81AE2992C574009CCC9A /* UIViewController+Preview.swift in Sources */,
 				A3BF817B2992C3B4009CCC9A /* AppDelegate.swift in Sources */,
 				A3BF81BD2994583D009CCC9A /* Recipe+Information.swift in Sources */,
 				A3BF817D2992C3B4009CCC9A /* SceneDelegate.swift in Sources */,
 				A3BF81B729933ABC009CCC9A /* ConstraintConsts.swift in Sources */,
+				A3BF81CF29996DF9009CCC9A /* DynamicStackViewController+Actions.swift in Sources */,
 				A3BF81BF29954180009CCC9A /* InfoViewController.swift in Sources */,
 				A3BF81B5299306E7009CCC9A /* Recipe.swift in Sources */,
+				A3BF81C12996C30B009CCC9A /* UILayoutPriority+Constants.swift in Sources */,
+				A3BF81C429970818009CCC9A /* NestedStackUpperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

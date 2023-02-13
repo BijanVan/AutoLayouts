@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
 
     lazy var recipes: [Recipe] = Recipe.recipes
 
-    var currentIndex = 0
+    var currentIndex = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,12 +48,14 @@ class MainViewController: UIViewController {
         buttonStackView.addArrangedSubview(nextButton)
         view.addSubview(stackView)
 
+        titleLabel.setContentHuggingPriority(.defaultHigh, for: .vertical)
+
         let guide = view.safeAreaLayoutGuide
         NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: guide.leadingAnchor, multiplier: 1),
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: guide.topAnchor, multiplier: 1),
-            guide.trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 1),
+            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: guide.leadingAnchor, multiplier: 1),
             guide.bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 1),
+            guide.trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 1),
         ])
     }
 
@@ -65,6 +67,7 @@ class MainViewController: UIViewController {
         titleLabel.font = UIFont.preferredFont(forTextStyle: .headline)
         titleLabel.text = "Loading Recipes"
         titleLabel.textAlignment = .center
+        titleLabel.accessibilityIdentifier = "Recipe Title"
 
         containerView.layer.borderWidth = 1.0
         containerView.layer.borderColor = UIColor.systemBlue.cgColor
