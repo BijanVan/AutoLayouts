@@ -30,6 +30,11 @@
 		A3BF81C82997FA58009CCC9A /* NestedStackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C72997FA58009CCC9A /* NestedStackButtonView.swift */; };
 		A3BF81CA2999523B009CCC9A /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81C92999523B009CCC9A /* DynamicStackViewController.swift */; };
 		A3BF81CF29996DF9009CCC9A /* DynamicStackViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81CE29996DF9009CCC9A /* DynamicStackViewController+Actions.swift */; };
+		A3BF81D2299AA153009CCC9A /* TwoEqualWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF81D1299AA153009CCC9A /* TwoEqualWidthViewController.swift */; };
+		A3DBFCB1299B21C1009A5CB7 /* TwoDifferentWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DBFCB0299B21C1009A5CB7 /* TwoDifferentWidthViewController.swift */; };
+		A3DBFCB4299B22F1009A5CB7 /* TwoComplexWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DBFCB3299B22F1009A5CB7 /* TwoComplexWidthViewController.swift */; };
+		A3DBFCB7299B29F2009A5CB7 /* SimpleLabelAndTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DBFCB6299B29F2009A5CB7 /* SimpleLabelAndTextFieldController.swift */; };
+		A3DBFCBA299BD886009A5CB7 /* DynamicLabelAndTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DBFCB9299BD886009A5CB7 /* DynamicLabelAndTextFieldController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		A3BF81C92999523B009CCC9A /* DynamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
 		A3BF81CB299953AA009CCC9A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3BF81CE29996DF9009CCC9A /* DynamicStackViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicStackViewController+Actions.swift"; sourceTree = "<group>"; };
+		A3BF81D1299AA153009CCC9A /* TwoEqualWidthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoEqualWidthViewController.swift; sourceTree = "<group>"; };
+		A3DBFCB0299B21C1009A5CB7 /* TwoDifferentWidthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDifferentWidthViewController.swift; sourceTree = "<group>"; };
+		A3DBFCB3299B22F1009A5CB7 /* TwoComplexWidthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoComplexWidthViewController.swift; sourceTree = "<group>"; };
+		A3DBFCB6299B29F2009A5CB7 /* SimpleLabelAndTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabelAndTextFieldController.swift; sourceTree = "<group>"; };
+		A3DBFCB9299BD886009A5CB7 /* DynamicLabelAndTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLabelAndTextFieldController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +189,11 @@
 				A3BF81CD29996DC4009CCC9A /* SimpleStack */,
 				A3BF81C2299707E2009CCC9A /* NestedStack */,
 				A3BF81CC29996D9D009CCC9A /* DynamicStack */,
+				A3BF81D0299AA136009CCC9A /* TwoEqualWidth */,
+				A3DBFCAF299B218A009A5CB7 /* TwoDifferentWidth */,
+				A3DBFCB2299B22CB009A5CB7 /* TwoComplexWidth */,
+				A3DBFCB5299B29BC009A5CB7 /* SimpleLabelAndTextField */,
+				A3DBFCB8299BD863009A5CB7 /* DynamicLabelAndTextField */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,6 +224,46 @@
 				A3BF81B0299302AD009CCC9A /* SimpleStackViewController.swift */,
 			);
 			path = SimpleStack;
+			sourceTree = "<group>";
+		};
+		A3BF81D0299AA136009CCC9A /* TwoEqualWidth */ = {
+			isa = PBXGroup;
+			children = (
+				A3BF81D1299AA153009CCC9A /* TwoEqualWidthViewController.swift */,
+			);
+			path = TwoEqualWidth;
+			sourceTree = "<group>";
+		};
+		A3DBFCAF299B218A009A5CB7 /* TwoDifferentWidth */ = {
+			isa = PBXGroup;
+			children = (
+				A3DBFCB0299B21C1009A5CB7 /* TwoDifferentWidthViewController.swift */,
+			);
+			path = TwoDifferentWidth;
+			sourceTree = "<group>";
+		};
+		A3DBFCB2299B22CB009A5CB7 /* TwoComplexWidth */ = {
+			isa = PBXGroup;
+			children = (
+				A3DBFCB3299B22F1009A5CB7 /* TwoComplexWidthViewController.swift */,
+			);
+			path = TwoComplexWidth;
+			sourceTree = "<group>";
+		};
+		A3DBFCB5299B29BC009A5CB7 /* SimpleLabelAndTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A3DBFCB6299B29F2009A5CB7 /* SimpleLabelAndTextFieldController.swift */,
+			);
+			path = SimpleLabelAndTextField;
+			sourceTree = "<group>";
+		};
+		A3DBFCB8299BD863009A5CB7 /* DynamicLabelAndTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A3DBFCB9299BD886009A5CB7 /* DynamicLabelAndTextFieldController.swift */,
+			);
+			path = DynamicLabelAndTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,14 +400,19 @@
 				A3BF817F2992C3B4009CCC9A /* MainViewController.swift in Sources */,
 				A3BF81CA2999523B009CCC9A /* DynamicStackViewController.swift in Sources */,
 				A3BF81C6299709AF009CCC9A /* NameView.swift in Sources */,
+				A3DBFCBA299BD886009A5CB7 /* DynamicLabelAndTextFieldController.swift in Sources */,
+				A3DBFCB7299B29F2009A5CB7 /* SimpleLabelAndTextFieldController.swift in Sources */,
 				A3BF81B1299302AD009CCC9A /* SimpleStackViewController.swift in Sources */,
 				A3BF81AD2992C574009CCC9A /* UIView+Preview.swift in Sources */,
+				A3DBFCB4299B22F1009A5CB7 /* TwoComplexWidthViewController.swift in Sources */,
 				A3BF81B329930384009CCC9A /* NestedStackViewController.swift in Sources */,
 				A3BF81C82997FA58009CCC9A /* NestedStackButtonView.swift in Sources */,
+				A3DBFCB1299B21C1009A5CB7 /* TwoDifferentWidthViewController.swift in Sources */,
 				A3BF81AE2992C574009CCC9A /* UIViewController+Preview.swift in Sources */,
 				A3BF817B2992C3B4009CCC9A /* AppDelegate.swift in Sources */,
 				A3BF81BD2994583D009CCC9A /* Recipe+Information.swift in Sources */,
 				A3BF817D2992C3B4009CCC9A /* SceneDelegate.swift in Sources */,
+				A3BF81D2299AA153009CCC9A /* TwoEqualWidthViewController.swift in Sources */,
 				A3BF81B729933ABC009CCC9A /* ConstraintConsts.swift in Sources */,
 				A3BF81CF29996DF9009CCC9A /* DynamicStackViewController+Actions.swift in Sources */,
 				A3BF81BF29954180009CCC9A /* InfoViewController.swift in Sources */,
